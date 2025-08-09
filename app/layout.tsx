@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "GRACJA Rogowo – Pokoje i apartamenty przy plaży",
   description: "Komfortowe pokoje i apartamenty tuż przy plaży w Rogowie.",
@@ -14,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#081c4c" />
         <meta property="og:image" content="/og-gracja-1200x630.jpg" />
       </head>
-      <body style={{ fontFamily: "Inter, system-ui, Arial, sans-serif", margin:0 }}>{children}</body>
+      <body className="min-h-screen antialiased">{children}</body>
     </html>
   );
 }

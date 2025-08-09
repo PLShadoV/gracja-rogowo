@@ -1,7 +1,0 @@
-## Router fallback
-Ten pakiet zawiera:
-- `app/` (App Router)
-- `src/app/` (App Router w strukturze `src/`)
-- `pages/index.tsx` (Pages Router)
-
-Next.js użyje jednej z powyższych opcji – dzięki temu unikniemy 404 niezależnie od struktury projektu.
