@@ -4,7 +4,7 @@ export default function Footer() {
     <footer className="mt-16 bg-brand text-white">
       <div className="mx-auto max-w-7xl px-4 py-10 grid gap-8 md:grid-cols-4">
         <div><div className="font-semibold">GRACJA Rogowo</div>
-          <p className="mt-3 text-sm opacity-80">Pokoje i apartamenty przy plaży.</p></div>
+          <p className="mt-3 text-sm opacity-80">Pokoje i apartamenty przy plaży – Rogowo.</p></div>
         <div>
           <div className="font-semibold">Kontakt</div>
           <ul className="mt-3 text-sm opacity-90 space-y-1">
@@ -19,6 +19,8 @@ export default function Footer() {
             <li><a href="/okolica/mrzezyno">Mrzeżyno</a></li>
             <li><a href="/okolica/dzwirzyno">Dźwirzyno</a></li>
             <li><a href="/okolica/kolobrzeg">Kołobrzeg</a></li>
+            <li><a href="/okolica/z-psem">Z psem nad morze</a></li>
+            <li><a href="/okolica/sciezki-rowerowe">Ścieżki rowerowe</a></li>
           </ul>
         </div>
         <div>

@@ -5,8 +5,14 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
 export const metadata = {
-  title: "GRACJA Rogowo – Pokoje i apartamenty przy plaży",
-  description: "Komfortowe pokoje i apartamenty tuż przy plaży w Rogowie.",
+  title: "GRACJA Rogowo – Pokoje i apartamenty przy plaży | Rogowo noclegi",
+  description: "GRACJA Rogowo – komfortowe pokoje i apartamenty przy samej plaży. Noclegi nad morzem blisko Mrzeżyna, Dźwirzyna i Kołobrzegu. Parking, Wi‑Fi, aneksy kuchenne.",
+  openGraph: {
+    title: "GRACJA Rogowo – Pokoje i apartamenty przy plaży",
+    description: "Noclegi w Rogowie przy plaży. Doskonała baza na wczasy z psem i rowerowe trasy Velo Baltica.",
+    type: "website"
+  },
+  alternates: { canonical: "/" }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -4,4 +4,5 @@
 
 :root { --brand: #081c4c; --accent: #967d48; }
 a { color: var(--accent); }
-body { color: #111; }
+body { color: #111; background:#fff; }
+h1,h2,h3 { scroll-margin-top: 96px; }
