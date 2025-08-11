@@ -10,7 +10,7 @@ export default function Page(){
         <AreaDetail
           title="Pokoje na wynajem – Mrzeżyno"
           lead="Port rybacki, rejsy i nadmorski klimat tuż obok."
-          bullets=["Promenada i molo", "Świeże ryby i knajpki", "Rejsy wycieczkowe"]
+          bullets={["Promenada i molo", "Świeże ryby i knajpki", "Rejsy wycieczkowe"]}
           img="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop"
         />
       </main>

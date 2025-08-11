@@ -10,7 +10,7 @@ export default function Page(){
         <AreaDetail
           title="Pokoje na wynajem – Dźwirzyno"
           lead="Szerokie plaże i bliskość Jeziora Resko."
-          bullets=["Wypożyczalnie sprzętu wodnego", "Trasy spacerowe i rowerowe", "Rodzinny klimat"]
+          bullets={["Wypożyczalnie sprzętu wodnego", "Trasy spacerowe i rowerowe", "Rodzinny klimat"]}
           img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop"
         />
       </main>

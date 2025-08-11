@@ -10,7 +10,7 @@ export default function Page(){
         <AreaDetail
           title="Pokoje na wynajem – Rogowo"
           lead="Spokojna miejscowość między morzem a jeziorem Resko Przymorskie."
-          bullets=["Plaża 200 m od obiektu", "Sklepy i restauracje w zasięgu spaceru", "Dogodny dojazd i parking"]
+          bullets={["Plaża 200 m od obiektu", "Sklepy i restauracje w zasięgu spaceru", "Dogodny dojazd i parking"]}
           img="https://images.unsplash.com/photo-1468413253725-0d5181091126?q=80&w=1600&auto=format&fit=crop"
         />
       </main>

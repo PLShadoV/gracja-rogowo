@@ -10,7 +10,7 @@ export default function Page(){
         <AreaDetail
           title="Ścieżki rowerowe"
           lead="Przebieg Velo Baltica i lokalne pętle na rodzinne wycieczki."
-          bullets=["Łącznie kilkadziesiąt kilometrów tras", "Bezpieczne odcinki dla dzieci", "Miejsca na piknik i punkty widokowe"]
+          bullets={["Łącznie kilkadziesiąt kilometrów tras", "Bezpieczne odcinki dla dzieci", "Miejsca na piknik i punkty widokowe"]}
           img="https://images.unsplash.com/photo-1506849042430-99f4b0b25bcd?q=80&w=1600&auto=format&fit=crop"
         />
       </main>

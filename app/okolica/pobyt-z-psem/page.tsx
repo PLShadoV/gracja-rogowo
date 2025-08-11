@@ -10,7 +10,7 @@ export default function Page(){
         <AreaDetail
           title="Pobyt z psem"
           lead="Zwierzęta mile widziane – sprawdź zasady i udogodnienia."
-          bullets=["Dopłata 40 zł/doba", "Miski i ręczniki na życzenie", "Najbliższe plaże przyjazne psom"]
+          bullets={["Dopłata 40 zł/doba", "Miski i ręczniki na życzenie", "Najbliższe plaże przyjazne psom"]}
           img="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1600&auto=format&fit=crop"
         />
       </main>
