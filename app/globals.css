@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --brand:#081c4c;
+  --accent:#967d48;
+  --text:#0e1a3a;
+  --light:#f7f8fb;
+}
+
+html{ scroll-behavior:smooth; }
+::selection{ background-color: color-mix(in oklab, var(--accent) 30%, transparent); }
+body{ color: var(--text); }
+a:focus{ outline-offset: 2px; }
+img{ color: transparent; } /* avoid CLS for lazy images text nodes */
