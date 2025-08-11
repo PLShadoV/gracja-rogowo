@@ -1,38 +1,47 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Container from "@/components/Container";
+import SectionTitle from "@/components/SectionTitle";
+import MapSection from "@/components/MapSection";
 
-import ContactForm from "@/components/ContactForm";
-
-export const metadata = {
-  title: "Kontakt – GRACJA Rogowo | Dane kontaktowe i mapa",
-  description: "Skontaktuj się z GRACJĄ Rogowo. Telefon, email, adres, mapa dojazdu. Pokoje i apartamenty przy plaży – Rogowo."
-};
-
-export default function Page() {
+export default function ContactPage(){
   return (
-    <main className="mx-auto max-w-7xl px-4 py-12">
-      <h1 className="text-4xl font-semibold text-brand text-center">Kontakt</h1>
-      <p className="mt-2 text-center text-neutral-600">Masz pytania o noclegi w Rogowie? Napisz lub zadzwoń – odpowiemy szybko.</p>
-
-      <div className="mt-10 grid gap-8 md:grid-cols-2">
-        <div className="rounded-2xl border p-6">
-          <h2 className="font-semibold">Dane kontaktowe</h2>
-          <ul className="mt-4 text-sm text-neutral-700 space-y-2">
-            <li>Telefon: <a href="tel:+48799042755">+48 799 042 755</a></li>
-            <li>Email: <a href="mailto:info@gracjarogowo.pl">info@gracjarogowo.pl</a></li>
-            <li>Adres: Rogowo 46, 72-330 Rogowo</li>
-            <li>Facebook: <a href="https://facebook.com/GracjaRogowo" target="_blank" rel="noreferrer">facebook.com/GracjaRogowo</a></li>
-          </ul>
-          <div className="mt-6">
-            <ContactForm />
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main className="pt-24 pb-20">
+        <Container>
+          <SectionTitle eyebrow="Kontakt" title="Skontaktuj się z nami" subtitle="Masz pytania? Chętnie pomożemy zaplanować pobyt." />
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="rounded-2xl border bg-white p-6 shadow-sm" style={{ borderColor: "#e6e8ef" }}>
+              <dl className="grid gap-3 text-sm text-slate-700">
+                <div className="grid grid-cols-3"><dt className="font-medium">Telefon</dt><dd className="col-span-2"><a href="tel:+48600000000" className="hover:underline">+48 600 000 000</a></dd></div>
+                <div className="grid grid-cols-3"><dt className="font-medium">E‑mail</dt><dd className="col-span-2"><a href="mailto:kontakt@gracja-rogowo.pl" className="hover:underline">kontakt@gracja-rogowo.pl</a></dd></div>
+                <div className="grid grid-cols-3"><dt className="font-medium">Adres</dt><dd className="col-span-2">ul. Nadmorska 1, 72‑330 Rogowo</dd></div>
+                <div className="grid grid-cols-3"><dt className="font-medium">Godziny</dt><dd className="col-span-2">09:00–18:00 (Pn–Pt)</dd></div>
+              </dl>
+            </div>
+            <form className="grid gap-4 rounded-2xl border bg-white p-6 shadow-sm" style={{ borderColor: "#e6e8ef" }} action="/api/contact" method="post">
+              <div className="grid gap-2">
+                <label className="text-sm text-slate-700">Imię</label>
+                <input name="name" className="rounded-xl border px-3 py-2" placeholder="Imię" />
+              </div>
+              <div className="grid gap-2">
+                <label className="text-sm text-slate-700">E‑mail</label>
+                <input name="email" type="email" className="rounded-xl border px-3 py-2" placeholder="e‑mail" />
+              </div>
+              <div className="grid gap-2">
+                <label className="text-sm text-slate-700">Wiadomość</label>
+                <textarea name="message" rows={5} className="rounded-xl border px-3 py-2" placeholder="Napisz do nas..." />
+              </div>
+              <button className="rounded-2xl border border-accent bg-brand px-6 py-3 font-semibold text-white">Wyślij</button>
+            </form>
           </div>
-        </div>
-        <div className="rounded-2xl overflow-hidden border">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2336.683801623893!2d15.329147676889193!3d54.15024977253344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47006dfe2b37c343%3A0x907e3320572f761a!2sGRACJA%20-%20Pokoje%20go%C5%9Bcinne%20i%20apartamenty%20przy%20pla%C5%BCy!5e0!3m2!1spl!2spl!4v1754753952433!5m2!1spl!2spl"
-            width="100%" height="420" style={{border:0}} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen
-            title="Mapa dojazdu do GRACJI Rogowo">
-          </iframe>
-        </div>
-      </div>
-    </main>
+          <div className="mt-8">
+            <MapSection />
+          </div>
+        </Container>
+      </main>
+      <Footer />
+    </div>
   );
 }

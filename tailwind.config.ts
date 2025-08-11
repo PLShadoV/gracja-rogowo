@@ -1,2 +1,22 @@
-import type { Config } from "tailwindcss"
-export default {content:["./app/**/*.{ts,tsx}","./components/**/*.{ts,tsx}"],theme:{extend:{colors:{brand:"#081c4c",accent:"#967d48"}}},plugins:[],} satisfies Config
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        brand: "var(--brand)",
+        accent: "var(--accent)",
+        text: "var(--text)",
+        light: "var(--light)",
+      },
+      borderRadius: {
+        '2xl': '1.25rem',
+      }
+    },
+  },
+  plugins: [],
+} satisfies Config;
